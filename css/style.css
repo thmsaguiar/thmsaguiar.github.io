@@ -1,0 +1,21 @@
+body{
+	font-family: Bahnschrift;
+}
+nav{
+	background-color: #000000; 
+	font-size: 1.3em;
+}
+.img-about{
+	border-radius: 100px;
+	width: 200px;
+	height: 270px;
+}
+.title-about{
+	font-size: 24px;
+}
+.text-about{
+	font-size: 18px;
+}
+#menu-lateral{
+
+}
