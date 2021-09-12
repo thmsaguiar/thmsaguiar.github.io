@@ -2,22 +2,74 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-	  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	  	<!-- Bootstrap CSS -->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<!--CSS-->
 		<link href="css/style.css" rel="stylesheet">
 		<!-- Icone Page -->
-  		<link rel="icon" type="imagem/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1_vRlcmtBN61V_mWq7RBO05iNilAYXgjjQ&usqp=CAU" />
-	  	<title>Minha Página</title>
+		<link rel="icon" type="imagem/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1_vRlcmtBN61V_mWq7RBO05iNilAYXgjjQ&usqp=CAU" />
+		<title>Minha Página</title>
 	</head>
 	<body>
-		<h1 style="text-align: center;"> Bem-vindo(a) a minha página!</h1>
-		<p style="text-align: center;">Olá, meu nome é Thomas Aguiar, estou testando isso aqui kkk.</p>
-		<center>
-			<img align="middle" src="https://i.pinimg.com/originals/0f/b0/4c/0fb04cc5cde3a4fb583012936aebfb82.gif">
-		</center>
-		<p style="text-align: center;">Contato: thvicente110100@gmail.com</p>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+				<img src="imagens/logo-preto.png" alt="" width="200" >
+				</a>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#">About</a>
+						<a class="nav-link" href="#">Portifolio</a>
+						<a class="nav-link" href="#">Contat</a>						
+
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container alert page">
+			<table>
+				<tr>	
+					<td>
+						<img class="img-about" src="imagens/thomas.jpg">
+					</td>
+				<td>
+					<div class="container">
+						<b class="title-about">Thomas Aguiar Vicente</b>
+						<p class="text-about">Atualmente está cursando faculdade de Ciências da Computação na Universidade
+						Anhembi Morumbi, integrante do grupo Laureate.
+						<br>Já trabalhou como estagiário de Análise e Desenvolvimento de Sistema no IPT - Instituto de Pesquisas
+						Tecnológicas em São Paulo, onde participou do desenvolvimento de um software web interno.
+						<br>Tem conhecimento em: Java, Javascript, JQuery, HTML & CSS, C++, C#, C,
+						Python, PHP, Virtualizaçao de Sistemas Operacionais, T-SQL, UX, SCRUM, Agile, Wireframes, User Stories.
+						</p>
+					</div>
+				</td>
+				</tr>
+			</table>
+		</div>
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.linkedin.com/in/thomas-aguiar-vicente-a328671b0/" target="_blank"><img src="imagens/in-icon.png" alt="" width="40"></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.instagram.com/thmsaguiar/" target="_blank"><img src="imagens/ig-icon.png" alt="" width="40"></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" onclick="copiarTexto()"><img src="imagens/dsc-icon.png" alt="" width="40"></a>
+			</li>
+		</ul>
+		<script>
+			let copiarTexto = () => {
+				const texto = "thmsaguiar#8761";
+				let inputTest = document.createElement("input");
+				inputTest.value = texto;
+				document.body.appendChild(inputTest);
+				inputTest.select();
+				document.execCommand('copy');
+				document.body.removeChild(inputTest);
+			};
+		</script>
 	</body>
 </html>
