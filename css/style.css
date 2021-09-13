@@ -1,21 +1,33 @@
 body{
-	font-family: Bahnschrift;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 nav{
 	background-color: #000000; 
 	font-size: 1.3em;
 }
-.img-about{
-	border-radius: 100px;
-	width: 200px;
-	height: 270px;
+.cartao-title{
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-weight: bold;
+	font-size: 90px;
+	letter-spacing: -0.05em; 
 }
-.title-about{
-	font-size: 24px;
+.cartao-subtitle{
+	color: #979797;
+	font-size: 20px;
 }
-.text-about{
+.cartao-text{
 	font-size: 18px;
 }
-#menu-lateral{
 
+.aboutdiv{
+	margin-top: 20px;
+}
+
+.menu-lateral{
+	margin-top: 100px;
+	position: absolute;
+}
+
+#skills{
+	margin-top: 20px;
 }
