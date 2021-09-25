@@ -1,0 +1,53 @@
+body{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+nav{
+	background-color: #000000; 
+	font-size: 1.3em;
+}
+ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.cartao-title{
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-weight: bold;
+	font-size: 90px;
+	letter-spacing: -0.05em; 
+}
+.cartao-subtitle{
+	color: #979797;
+	font-size: 20px;
+}
+.cartao-text{
+	font-size: 18px;
+}
+
+.aboutdiv{
+	margin-top: 20px;
+}
+
+.menu-lateral{
+	margin-top: 100px;
+	position: absolute;
+}
+
+.titulos{
+	font-family: 'Billion Dreams', sans-serif;                                                	
+	font-size: 60px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.subtitulos{
+	font-family: 'Harabara', sans-serif;                                               
+	font-size: 25px;
+	padding-left : 30px;
+	padding-top : 10px;
+}
