@@ -5,8 +5,16 @@ nav{
 	background-color: #000000; 
 	font-size: 1.3em;
 }
-.cartao-title{
-	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.cartao-title{	
 	font-weight: bold;
 	font-size: 90px;
 	letter-spacing: -0.05em; 
@@ -28,6 +36,18 @@ nav{
 	position: absolute;
 }
 
-#skills{
-	margin-top: 20px;
+.titulos{
+	font-family: 'Billion Dreams', sans-serif;                                                	
+	font-size: 60px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
 }
+
+.subtitulos{
+	font-family: 'Harabara', sans-serif;                                               
+	font-size: 25px;
+	padding-left : 30px;
+	padding-top : 10px;
+}
+
