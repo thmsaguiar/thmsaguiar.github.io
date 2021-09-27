@@ -9,7 +9,7 @@
 		<!-- CSS -->
 		<link href="css/style.css" rel="stylesheet">	
 		<!--Fonts-->
-		<link href="http://fonts.cdnfonts.com/css/harabara" rel="stylesheet">
+		<link href="http://fonts.cdnfonts.com/css/harabara" rel="stylesheet">			                                
 		<!-- Icone Page -->
   		<link rel="icon" type="imagem/png" href="imagens/icone-page.png" />
 	  	<title>Thomas Aguiar Vicente</title>
@@ -17,14 +17,14 @@
 	<body>
 		<!-- Menu -->
 		<nav class="container-fluid navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="index.html">
 				 <img src="imagens/logo-preto.png" alt="" width="200" >
 			</a>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-link active" aria-current="page" href="#">About</a>
-					<a class="nav-link" href="#">Portifolio</a>
-					<a class="nav-link" href="#">Contact</a>						
+					<a class="nav-link active" aria-current="page" href="index.html">About</a>
+					<a class="nav-link" href="portfolio.html">Portfolio</a>
+					<a class="nav-link disabled" href="#">Contact</a>						
 				</div>
 			</div>			
 		</nav>
@@ -60,10 +60,10 @@
 			</div>			
 		</div>
 		<!-- Skills -->
-		<div class="container-fluid">			
-			<div class="row border">
-				<div class="col-8">
-					<p class="titulos">I'm made of</p>
+		<div class="skills container-fluid">
+			<p class="titulos">I'm made of</p>				
+			<div class="row">
+				<div class="col-8 m-chart">									
 					<canvas id="myChart" width="300" height="100"></canvas>		
 				</div>	
 				<div class="col">
@@ -78,7 +78,7 @@
 						    <li>TypeScript</li>
 						    <li>Python</li>		
 						    <li>AngularJS</li>		 	
-						    <li>Frameworks (Bootstrap, Ionic)</li>							    						   
+						    <li>Frameworks (Bootstrap, Ionic)</li>		   
 						    <li>Spend all day on the computer</li>
 						    <li>Drink coffee</li>
 						</ul>
@@ -152,7 +152,19 @@
 			            }
 			        }
 			    }
-			});
+			});		
+
     	</script>
 	</body>
+	<footer>
+		<div>
+			<a type="button" class="btn btn-outline-warning btn-buymeacoffe" href="https://www.buymeacoffee.com/thmsaguiar" target="_blank"><img src="imagens/bmc-icon.png"></a>
+		</div>		
+		<div>
+			<a href="index.html">© 2021 Thomas Aguiar Vicente</a>
+			<a href="index.html" style="margin-left: 300px;">About</a>
+			<a href="portfolio.html" style="margin-left: 50px;">Portfolio</a>
+			<a href="#" style="margin-left: 50px;">Contact</a>	
+		</div>	
+	</footer>
 </html>
