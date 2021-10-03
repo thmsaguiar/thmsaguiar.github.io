@@ -82,3 +82,18 @@ a:hover {
 .btn-buymeacoffe img{
 	width: 200px;
 }
+.img-index{
+	position:  absolute; 
+	width: 600px; 
+	margin-top: 20px; 
+	margin-left:  30%; 
+	height: 500px;
+}
+.cartao-title-index{
+	font-weight: bold;
+	font-size: 70px; 
+	letter-spacing: -0.10em;
+}
+.index-div{
+	margin-top: 90px; 
+}

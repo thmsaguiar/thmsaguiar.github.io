@@ -1,0 +1,65 @@
+<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><!--JQuery-->
+    	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--Sweetalert--> 	
+    	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--Chart-->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script><!--Chart-->
+    	<script>    		
+    		//Copiar id do discord para área de transferência
+        	$("#btdiscord").on('click', function() {
+  				const texto = "thmsaguiar#8761";
+           		let inputTest = document.createElement("input");
+           		inputTest.value = texto;
+           		document.body.appendChild(inputTest);
+           		inputTest.select();
+           		document.execCommand('copy');           		
+           		document.body.removeChild(inputTest);          
+           		Swal.fire({
+           			icon:'success',
+           			title: 'ID copiado!',
+				  	text: 'Pronto, agora é só me enviar uma solicitação! ☺', 				  	
+				  	confirmButtonText: 'Okay',
+				  	confirmButtonColor: '#7DCEA0', 
+				});
+			});
+			//gráfico de pizza					
+			var ctx = document.getElementById('myChart').getContext('2d');
+			var myChart = new Chart(ctx, {
+			    type: 'doughnut',
+			    data: {
+			        labels: ['Coder', 'Designer', 'Mananger', 'Cats Lover', 'Power of friendship'],
+			        datasets: [{
+			            label: 'My First Dataset',
+					    data: [300, 150, 200, 120, 90],
+					    backgroundColor: [
+					      'rgb(38, 39, 39)',
+					      'rgb(58, 86, 114)',
+					      'rgb(211, 84, 0)',
+					      'rgb(146, 43, 33)',
+					      'rgb(17, 122, 101)'
+					    ],
+			            hoverOffset: 4
+			        }]
+			    },
+			    options: {
+			        scales: {
+			            y: {
+			                beginAtZero: true
+			            }
+			        }
+			    }
+			});		
+
+    	</script>
+	</body>
+	<footer>
+		<div>
+			<a type="button" class="btn btn-outline-warning btn-buymeacoffe" href="https://www.buymeacoffee.com/thmsaguiar" target="_blank"><img src="imagens/bmc-icon.png"></a>
+		</div>		
+		<div>
+			<a href="index.html">© 2021 Thomas Aguiar Vicente</a>
+			<a href="index.html" style="margin-left: 300px;">About</a>
+			<a href="portfolio.html" style="margin-left: 50px;">Portfolio</a>
+			<a href="#" style="margin-left: 50px;">Contact</a>	
+		</div>	
+	</footer>
+</html>

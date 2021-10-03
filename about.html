@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- CSS -->
+		<link href="css/style.css" rel="stylesheet">	
+		<!--Fonts-->
+		<link href="http://fonts.cdnfonts.com/css/harabara" rel="stylesheet">                                
+		<!-- Icone Page -->
+  		<link rel="icon" type="imagem/png" href="imagens/icone-page.png" />
+	  	<title>Thomas Aguiar Vicente</title>
+	</head>
+	<body>
+		<!-- Menu -->
+		<nav class="container-fluid navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="index.html">
+				 <img src="imagens/logo-preto.png" alt="" width="200" >
+			</a>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="about.html">About</a>
+					<a class="nav-link" href="portfolio.html">Portfolio</a>
+					<a class="nav-link disabled" href="#">Contact</a>						
+				</div>
+			</div>			
+		</nav>
+		<!-- Menu lateral -->
+		<ul class="nav flex-column menu-lateral">
+			<li class="nav-item">
+			<a class="nav-link" href="https://www.linkedin.com/in/thomas-aguiar-vicente-a328671b0/" target="_blank"><img src="imagens/in-icon.png" alt="" width="40"></a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="https://medium.com/thomas-aguiar" target="_blank"><img src="imagens/md-icon.png" alt="" width="40"></a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="https://www.instagram.com/thmsaguiar/" target="_blank"><img src="imagens/ig-icon.png" alt="" width="40"></a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#" id="btdiscord"><img src="imagens/dsc-icon.png" alt="" width="40"></a>
+			</li>
+		</ul>
+		<!-- Sobre -->
+		<div class="container-fluid">
+			<div class="row justify-content-md-center">						    
+				<div class="col-4 aboutdiv">
+					<img class="float-right" src="imagens/thomas-about.png">    	
+			    </div>
+			    <div class="col-4 aboutdiv" style="margin-top: 50px;">
+			    	<p class="cartao-title">about.</p>
+			    	<p class="cartao-subtitle">Computer Science Student, currently living in São Paulo, Brazil.
+			    	</p>
+					<p class="cartao-text"> 
+						I'm a knowledge enthusiast. When I'm not in front of the computer, you'll find me cooking, exercising or enjoying nature.
+					</p>
+				</div>
+			</div>			
+		</div>
+		<!-- Skills -->
+		<div class="skills container-fluid">
+			<p class="titulos">I'm made of</p>				
+			<div class="row">
+				<div class="col-8 m-chart">									
+					<canvas id="myChart" width="300" height="100"></canvas>		
+				</div>	
+				<div class="col">
+					<div class="row">
+						<p class="subtitulos"> Part Coder </p>
+						<ul class="columns" data-columns="2">
+							<li>Front-end development</li>
+							<li>Mobile development</li>   
+							<li>HTML/CSS</li>
+							<li>C#</li>
+						    <li>JavaScript</li>
+						    <li>TypeScript</li>
+						    <li>Python</li>		
+						    <li>AngularJS</li>		 	
+						    <li>Frameworks (Bootstrap, Ionic)</li>		   
+						    <li>Spend all day on the computer</li>
+						    <li>Drink coffee</li>
+						</ul>
+					</div>
+					<div class="row">
+						<p class="subtitulos"> Part Mananger </p>
+						<ul>
+							<li>User stories</li>
+							<li>Wireframes (Axure)</li>
+						    <li>User journey (Miro)</li>						    
+						</ul>
+					</div>
+					<div class="row">
+						<p class="subtitulos"> Part Designer</p>
+						<ul>
+							<li>UX design</li>
+							<li>UI design</li>
+						    <li>Prototypes (Figma)</li>						    
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><!--JQuery-->
+    	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--Sweetalert--> 	
+    	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--Chart-->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script><!--Chart-->
+    	<script>    		
+    		//Copiar id do discord para área de transferência
+        	$("#btdiscord").on('click', function() {
+  				const texto = "thmsaguiar#8761";
+           		let inputTest = document.createElement("input");
+           		inputTest.value = texto;
+           		document.body.appendChild(inputTest);
+           		inputTest.select();
+           		document.execCommand('copy');           		
+           		document.body.removeChild(inputTest);          
+           		Swal.fire({
+           			icon:'success',
+           			title: 'ID copiado!',
+				  	text: 'Pronto, agora é só me enviar uma solicitação! ☺', 				  	
+				  	confirmButtonText: 'Okay',
+				  	confirmButtonColor: '#7DCEA0', 
+				});
+			});
+			//gráfico de pizza					
+			var ctx = document.getElementById('myChart').getContext('2d');
+			var myChart = new Chart(ctx, {
+			    type: 'doughnut',
+			    data: {
+			        labels: ['Coder', 'Designer', 'Mananger', 'Cats Lover', 'Power of friendship'],
+			        datasets: [{
+			            label: 'My First Dataset',
+					    data: [300, 150, 200, 120, 90],
+					    backgroundColor: [
+					      'rgb(38, 39, 39)',
+					      'rgb(58, 86, 114)',
+					      'rgb(211, 84, 0)',
+					      'rgb(146, 43, 33)',
+					      'rgb(17, 122, 101)'
+					    ],
+			            hoverOffset: 4
+			        }]
+			    },
+			    options: {
+			        scales: {
+			            y: {
+			                beginAtZero: true
+			            }
+			        }
+			    }
+			});		
+
+    	</script>
+	</body>
+	<footer>
+		<hr>
+		<div>
+			<a type="button" class="btn btn-outline-warning btn-buymeacoffe" href="https://www.buymeacoffee.com/thmsaguiar" target="_blank"><img src="imagens/bmc-icon.png"></a>
+		</div>		
+		<div>
+			<a href="index.html">© 2021 Thomas Aguiar Vicente</a>
+			<a href="index.html" style="margin-left: 300px;">About</a>
+			<a href="portfolio.html" style="margin-left: 50px;">Portfolio</a>
+			<a href="#" style="margin-left: 50px;">Contact</a>	
+		</div>	
+	</footer>
+</html>
