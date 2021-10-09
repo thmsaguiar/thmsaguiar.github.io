@@ -15,6 +15,8 @@
     	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--Sweetalert--> 	
     	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--Chart-->
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script><!--Chart-->
+    	
+		<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"><!-- CSSShake -->
 
 		<!-- Icone Page -->
   		<link rel="icon" type="imagem/png" href="imagens/icone-page.png" />
@@ -59,7 +61,7 @@
 		</div>
 		<!-- Skills -->
 		<div class="skills container-fluid">
-			<p class="titulos">I'm made of</p>				
+			<div class="test"></div><p class="titulos">I'm made of</p>				
 			<div class="row">
 				<div class="col-8 m-chart">									
 					<canvas id="myChart" width="300" height="100"></canvas>		
@@ -126,7 +128,7 @@
 			        labels: ['Coder', 'Designer', 'Mananger', 'Cats Lover', 'Power of friendship'],
 			        datasets: [{
 			            label: 'My First Dataset',
-					    data: [300, 150, 200, 120, 90],
+					    data: [35, 17, 23, 14, 11],
 					    backgroundColor: [
 					      'rgb(38, 39, 39)',
 					      'rgb(58, 86, 114)',
@@ -142,7 +144,13 @@
 			            y: {
 			                beginAtZero: true
 			            }
-			        }
+			        },
+			        /*tooltips: {
+			        	enabled: false
+			        },
+    				hover: {
+    					mode: null
+    				},*/
 			    }
 			});
 
@@ -150,7 +158,7 @@
 	</body>
 	<footer>
 		<hr>
-		<div>
+		<div class="shake-slow shake-constant--hover">
 			<a type="button" class="btn btn-outline-warning btn-buymeacoffe" href="https://www.buymeacoffee.com/thmsaguiar" target="_blank"><img src="imagens/bmc-icon.png"></a>
 		</div>		
 		<div>

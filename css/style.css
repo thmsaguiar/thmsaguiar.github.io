@@ -26,6 +26,45 @@ a:hover {
     color: #353535;
 }
 
+.titulos{	   
+	margin-left: 100px;
+	margin-top: 100px;	                    	
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	letter-spacing: -0.05em;
+}
+
+.subtitulos{
+	font-family: 'Harabara', sans-serif;
+	font-size: 25px;
+	padding-left : 30px;
+	padding-top : 10px;
+}
+
+/* Menu */
+.img-menu{
+	background-color: white;
+}
+.img-menu:hover{
+	background-color: #A9A9A9;
+}
+
+/* Buy me a coffe button */
+.btn-buymeacoffe{
+	border-radius: 50px;
+}
+.btn-buymeacoffe img{
+	width: 200px;
+}
+
+
+/* ## About ## */
+.aboutdiv{
+	margin-top: 20px;
+}
+
+/* card  */
 .cartao-title{
 	font-weight: bold;
 	font-size: 90px;
@@ -39,49 +78,29 @@ a:hover {
 	font-size: 18px;
 }
 
-.aboutdiv{
-	margin-top: 20px;
-}
-
-.menu-lateral{
-	margin-top: 100px;
-	position: absolute;
-}
-
-.titulos{	   
-	margin-left: 100px;
-	margin-top: 100px;	                    	
-	font-size: 60px;
-	font-weight: bold;
-	text-align: left;
-	letter-spacing: -0.05em;
-
-}
-
-.subtitulos{
-	font-family: 'Harabara', sans-serif;
-	font-size: 25px;
-	padding-left : 30px;
-	padding-top : 10px;
-}
-
+/* skills */
 .skills{
-	margin-top: 100px;
-	/*box-shadow: inset 5em 0 black;*/
-	/*box-shadow: inset 0 0 1em gray;*/
-	box-shadow: inset 5em 0 black, 0px 4px 5px #EEEDED, 0px -4px 5px #EEEDED;
+	/*background-color: #FAFAFA;
+	box-shadow: 0px 4px 4px #F4F3F3, 0px -4px 4px #F4F3F3;*/
+	margin-top: 100px;	
 }
-
+.test{
+	margin-left: 50px;
+	width: 30px;
+	height: 80px;
+	position:  absolute;
+	background-image: linear-gradient(180deg, black, #797979);
+}
 .m-chart{
 	margin-top: 90px;
 }
 
-.btn-buymeacoffe{
-	border-radius: 50px;
+
+/* ## Index ## */
+.index-div{
+	margin-top: 90px; 
 }
-.btn-buymeacoffe img{
-	width: 200px;
-}
+
 .img-index{
 	position:  absolute; 
 	width: 600px; 
@@ -89,14 +108,29 @@ a:hover {
 	margin-left:  30%; 
 	height: 500px;
 }
+
 .cartao-title-index{
 	font-weight: bold;
 	font-size: 70px; 
 	letter-spacing: -0.10em;
 }
-.index-div{
-	margin-top: 90px; 
+
+/* Posts */
+.posts-div{
+	/*background-color: #F4F2F2;*/
+	margin-bottom: 100px;
 }
-.img-menu{
-	background-color: white;
+.posts-title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	letter-spacing: -0.05em;
+}
+.posts:hover{
+    box-shadow:
+    1px 1px #5D5D5D,
+    2px 2px #5D5D5D,
+    3px 3px #5D5D5D;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
 }
