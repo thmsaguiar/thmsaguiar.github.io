@@ -25,22 +25,41 @@ a:hover {
 	text-decoration: none;
     color: #353535;
 }
+article {
+  position: relative;
+}
+article:after {
+  position: absolute;
+  bottom: 0;  
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to top, rgba(255,255,255, 1) 20%, rgba(255,255,255, 0) 80%);
+  pointer-events: none;
+}
 
-.titulos{	   
-	margin-left: 100px;
-	margin-top: 100px;	                    	
+.titulos{	                       	
 	font-size: 60px;
 	font-weight: bold;
 	text-align: left;
 	letter-spacing: -0.05em;
+	margin-left: 10%;
+	position:  absolute;
 }
-
 .subtitulos{
 	font-family: 'Harabara', sans-serif;
 	font-size: 25px;
 	padding-left : 30px;
 	padding-top : 10px;
 }
+.title-marcador{
+	width: 3%;
+	height: 13%;
+	margin-left: 5%;
+	position:  absolute;
+	background-image: linear-gradient(180deg, black, #797979);
+}
+
 
 /* Menu */
 .img-menu{
@@ -60,10 +79,9 @@ a:hover {
 
 
 /* ## About ## */
-.aboutdiv{
-	margin-top: 20px;
+.about-div{
+	margin-top: 3%;
 }
-
 /* card  */
 .cartao-title{
 	font-weight: bold;
@@ -79,20 +97,28 @@ a:hover {
 }
 
 /* skills */
-.skills{
-	/*background-color: #FAFAFA;
-	box-shadow: 0px 4px 4px #F4F3F3, 0px -4px 4px #F4F3F3;*/
-	margin-top: 100px;	
+.skill-div{
+	background-color: #FAFAFA;
+	margin-top: 10%;
 }
-.test{
-	margin-left: 50px;
-	width: 30px;
-	height: 80px;
-	position:  absolute;
-	background-image: linear-gradient(180deg, black, #797979);
+.skill-chart{
+	margin-top: 10%;
 }
-.m-chart{
-	margin-top: 90px;
+
+/* facts */
+.facts-div{
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+.facts-text{
+	text-align: left;
+	font-size: 23px;
+	letter-spacing: -0.05em; 
+	/*line-height: 0.7;*/
+}
+.facts-emoji{
+	text-align: center;
+	font-size: 200px;
 }
 
 
@@ -100,7 +126,6 @@ a:hover {
 .index-div{
 	margin-top: 90px; 
 }
-
 .img-index{
 	position:  absolute; 
 	width: 600px; 
@@ -108,17 +133,17 @@ a:hover {
 	margin-left:  30%; 
 	height: 500px;
 }
-
-.cartao-title-index{
+/* card */
+.index-card-title{
 	font-weight: bold;
 	font-size: 70px; 
 	letter-spacing: -0.10em;
 }
 
-/* Posts */
+/* posts */
 .posts-div{
-	/*background-color: #F4F2F2;*/
-	margin-bottom: 100px;
+	margin-top: 10%;
+	margin-bottom: 5%;
 }
 .posts-title{
 	text-align: center;
@@ -134,3 +159,6 @@ a:hover {
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
+
+
+
