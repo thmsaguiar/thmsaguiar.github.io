@@ -160,12 +160,12 @@ article:after {
     transform: translateX(-3px);
 }
 
-nav a{
+.nav-link{
 	position: relative;
 	padding: 5px 0;	
 	margin-right: 20px;
 }
-nav a:before{
+.nav-link:before{
 	position: absolute;
 	content: '';
 	left: 0;
@@ -177,7 +177,7 @@ nav a:before{
 	transform-origin: right;
 	transition: transform .4s linear;
 }
-nav a:hover:before{
+.nav-link:hover:before{
 	transform: scaleX(1);
 	transform-origin: left;	
 }
