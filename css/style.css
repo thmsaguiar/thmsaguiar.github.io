@@ -137,6 +137,9 @@ article:after {
 .skill-chart{
 	margin-top: 10%;
 }
+.chart-mobile{
+	display: none;
+}
 
 /* facts */
 .facts-div{
@@ -219,7 +222,7 @@ article:after {
 		font-size:  25px;
 	}
 	.cartao-subtitle{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.img-index{
 		width: 200px;
@@ -241,6 +244,57 @@ article:after {
 	}
 	.posts{
 		margin-top: 10px;
+	}
+
+	/* About */
+	.img-about{
+		width: 150px;
+		height: 300px;
+		margin-top: 30%;
+	}
+	.div-about{
+		margin-left: 20%;
+	}
+	.about-div{
+		margin-top: 8%;
+	}
+			
+	.cartao-title{
+		font-size: 40px;
+	}
+	.cartao-text{
+		font-size: 13px;
+	}
+	.skill-chart{
+		display:  none;
+	}
+	.parts-skill{
+		margin-top: 10%;
+	}
+	.parts-skill ul{		
+    -moz-column-count: 3;
+    -moz-column-gap: 16px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 16px;
+    column-count: 3;
+    column-gap: 16px;
+	}
+	.parts-skill ul li{
+		font-size: 14px;
+	}
+	.subtitulos{
+		font-size: 16px;
+	}
+	.facts-text{
+		font-size: 14px;
+	}
+	.facts-emoji{
+		font-size: 100px;
+		margin-top: 20%;
+	}
+	.chart-mobile{
+		display: block;
+		margin-top: 20%;
 	}
 
 }
