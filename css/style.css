@@ -64,9 +64,6 @@ article:after {
 
 
 /* Menu */
-.index-img-menu{
-	width: 200px;
-}
 .img-menu{
 	background-color: white;
 }
@@ -214,9 +211,6 @@ article:after {
 	}
 
 	/* Index */
-	.index-img-menu{
-		width: 120px;
-	}
 	.index-div{
 		margin-top: 35px; 
 		margin-bottom: 0px;
