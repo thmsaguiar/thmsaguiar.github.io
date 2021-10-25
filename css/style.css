@@ -197,7 +197,7 @@ article:after {
 @media (max-width: 760px){
 
 	.titulos{
-		font-size: 28px;		
+		font-size: 25px;		
 	}
 	.title-marcador{
 		width: 3%;
@@ -216,7 +216,7 @@ article:after {
 		margin-bottom: 0px;
 	}
 	.index-card-title{
-		font-size:  28px;
+		font-size:  25px;
 	}
 	.cartao-subtitle{
 		font-size: 16px;
@@ -234,7 +234,7 @@ article:after {
 		font-size: 12px;
 	}
 	.card-text{
-		font-size: 10px;
+		display:  none;
 	}
 	.read-link{
 		font-size: 12px;
