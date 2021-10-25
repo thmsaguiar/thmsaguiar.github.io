@@ -102,6 +102,14 @@ article:after {
 	width: 200px;
 }
 
+.rodape{
+	margin-top: 3%;
+}
+.rodape a{
+	margin-left: 3%;
+	margin-right: 5%;
+}
+
 
 /* ## About ## */
 .about-div{
@@ -149,7 +157,8 @@ article:after {
 
 /* ## Index ## */
 .index-div{
-	margin-top: 90px; 
+	margin-top: 90px;
+	margin-bottom: 200px; 
 }
 .img-index{
 	position:  absolute; 
@@ -183,4 +192,55 @@ article:after {
     3px 3px #5D5D5D;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
+}
+
+@media (max-width: 760px){
+
+	.titulos{
+		font-size: 30px;		
+	}
+	.title-marcador{
+		width: 3%;
+		height: 7%;
+	}
+	.btn-buymeacoffe img{
+		width: 100px;	
+	}
+	.rodape{
+		font-size: 12px;
+	}
+
+	/* Index */
+	.index-div{
+		margin-top: 35px; 
+		margin-bottom: 0px;
+	}
+	.index-card-title{
+		font-size:  32px;
+	}
+	.cartao-subtitle{
+		font-size: 16px;
+	}
+	.img-index{
+		width: 200px;
+		height: 200px;
+		margin-left:  28%;
+		margin-top: 30px;
+	}
+	.card-title{
+		font-size: 12px;
+	}
+	.card-subtitle{
+		font-size: 12px;
+	}
+	.card-text{
+		font-size: 10px;
+	}
+	.read-link{
+		font-size: 12px;
+	}
+	.posts{
+		margin-top: 10px;
+	}
+
 }
