@@ -99,7 +99,7 @@ article:after {
 	border-radius: 50px;
 }
 .btn-buymeacoffe img{
-	width: 200px;
+	width: 150px;
 }
 
 .rodape{
@@ -231,19 +231,19 @@ article:after {
 		margin-top: 30px;
 	}
 	.card-title{
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.card-subtitle{
 		font-size: 12px;
 	}
 	.card-text{
-		display:  none;
+		font-size: 14px;
 	}
 	.read-link{
-		font-size: 12px;
+		font-size: 14px;
 	}
-	.posts{
-		margin-top: 10px;
+	.posts-div{
+		margin-top: 20%;
 	}
 
 	/* About */
