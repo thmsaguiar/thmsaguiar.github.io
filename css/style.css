@@ -1,4 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/harabara');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 
 body{
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -6,6 +8,30 @@ body{
 nav{
 	background-color: #000000; 
 	font-size: 1.3em;
+}
+nav a{
+	text-decoration: none;
+	color: #939393;
+}
+nav a:hover {
+	text-decoration: none;
+    color: #353535;
+}
+footer a{
+	text-decoration: none;
+	color: #939393;
+}
+footer a:hover {
+	text-decoration: none;
+    color: #353535;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	text-decoration: none; 
+	color: #939393;   
 }
 ul{
     -moz-column-count: 2;
@@ -19,14 +45,7 @@ footer{
 	text-align: center;
 	margin-bottom: 20px;
 }
-a{
-	text-decoration: none;
-	color: #939393;
-}
-a:hover {
-	text-decoration: none;
-    color: #353535;
-}
+
 article {
   position: relative;
 }
@@ -197,6 +216,49 @@ article:after {
     transform: translateX(-3px);
 }
 
+/* ## Portfolio ## */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px; 
+  background-size: 100%, 100%; 
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: gray;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: gray;
+}
+.crnext-pre{
+	font-family: 'Raleway', sans-serif;
+}
+.text-color{
+	color: gray;
+}
+.titulo-port{
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	letter-spacing: -0.05em;
+	margin-left: 10%;
+}
+.msg-port{
+	font-size: 30px;	
+	text-align: left;
+	letter-spacing: -0.05em;
+	margin-left: 10%;
+}
+
+
+
 @media (max-width: 760px){
 
 	.titulos{
@@ -299,5 +361,8 @@ article:after {
 		display: block;
 		margin-top: 20%;
 	}
+
+	/* Portfolio */
+	
 
 }
