@@ -1,145 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-		<!-- CSS -->
-		<link href="css/style.css" rel="stylesheet">	
-		<!-- Fonts -->
-		<link href="http://fonts.cdnfonts.com/css/harabara" rel="stylesheet"><!--Harabara-->
-		<!-- Scripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--JQuery-->
-    	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--Sweetalert--> 	
-    	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--Chart-->
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script><!--Chart-->    	
-    	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"><!-- CSSShake -->
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script><!--Bootstrap-->
-    	 
 
-		<!-- Icone Page -->
-  		<link rel="icon" type="imagem/png" href="imagens/icone-page.png" />
-	  	<title>Thomas Aguiar Vicente</title>
-	  	<!-- Menu -->
-		<nav class="navbar navbar-expand-lg navbar-dark">			
-			<a class="navbar-brand" href="index.html">
-				<img src="imagens/logo-preto.png" alt="" width="200" >
-			</a>
-			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" id="btn">
-				<span class="navbar-toggler-icon"></span>				
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="myNavbar">
-				<ul class="navbar-nav navbar-right">					
-					<li class="nav-item"><a class="nav-link" aria-current="page" href="about.html">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-					<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/thomas-aguiar-vicente-a328671b0/" target="_blank">
-						<img class="img-menu" src="imagens/in-icon.png" alt="" width="30"></a></li>
-					<li class="nav-item"><a class="nav-link" href="https://medium.com/thomas-aguiar" target="_blank">
-						<img class="img-menu" src="imagens/md-icon.png" alt="" width="30"></a></li>
-					<li class="nav-item"><a class="nav-link" href="https://github.com/thmsaguiar" target="_blank">
-						<img class="img-menu" src="imagens/git-icon.png" alt="" width="30"></a></li>
-					<li class="nav-item"><a class="nav-link" href="https://www.instagram.com/thmsaguiar/" target="_blank">
-						<img class="img-menu" src="imagens/ig-icon.png" alt="" width="30"></a></li>
-					<li class="nav-item"><a class="nav-link" href="#" id="btdiscord">
-						<img class="img-menu" src="imagens/dsc-icon.png" alt="" width="40"></a></li>
-				</ul>
-			</div>			
-		</nav>
-	</head>
-	<body>
-		
-		<!-- Sobre -->
-		<img src="./imagens/background-index.png" class="img-index"></img>
-		<div class="container-fluid">			
-			<div class="row justify-content-md-center">					
-				<div class="col-4 index-div">
-			    	<p class="index-card-title">mananger</p>
-			    	<p class="cartao-subtitle">UX Product Mananger, products <br>with a focus on user experience. </p>
-				</div>	    
-				<div class="col-3">					
-				</div>
-				<div class="col-4 index-div"  style="text-align: right;">			
-					<p class="index-card-title">< coder ></p>		
-					<p class="cartao-subtitle">Websites and mobile apps,<br> elegant and with efficient code.</p>    	
-			    </div>
-			    
-			</div>			
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="/src/css/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="icon" type="imagem/png" href="/src/img/icone-page.png" />
+	<title>Thomas Aguiar Vicente</title>
+
+	<!-- Menu -->
+	<nav class="menu navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="index.html">
+			<img src="/src/img/logo-preto.png" alt="" width="200">
+		</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar"
+			aria-controls="myNavbar" id="btn">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+			<ul class="navbar-nav navbar-right">
+				<li class="nav-item"><a class="nav-link" aria-current="page" href="about.html">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+				<li class="nav-item"><a class="nav-link"
+						href="https://www.linkedin.com/in/thomas-aguiar-vicente-a328671b0/" target="_blank">
+						<img src="/src/img/in-icon.png" alt=""></a></li>
+				<li class="nav-item"><a class="nav-link" href="https://medium.com/thomas-aguiar" target="_blank">
+						<img src="/src/img/md-icon.png" alt=""></a></li>
+				<li class="nav-item"><a class="nav-link" href="https://github.com/thmsaguiar" target="_blank">
+						<img src="/src/img/git-icon.png" alt=""></a></li>
+				<li class="nav-item"><a class="nav-link" href="https://www.instagram.com/thmsaguiar/" target="_blank">
+						<img src="/src/img/ig-icon.png" alt=""></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" id="btdiscord">
+						<img class="discord " src="/src/img/dsc-icon.png" alt=""></a></li>
+			</ul>
 		</div>
-		<!-- Últimas postagens -->
-		<div class="container-fluid posts-div">	
+	</nav>
+</head>
+
+<body>
+	<main>
+		<section>
+			<!-- Sobre -->
+			<div class="introducao">
+				<img class="backg" src="src/img/background-index.png">
+				<div class="row">
+					<div class="col conteudo">
+						<h1>mananger</h1>
+						<h3>UX Product Mananger, products <br>with a focus on user experience.
+						</h3>
+					</div>					
+					<div class="col conteudo">
+						<h1>
+							< coder>
+						</h1>
+						<h3>Websites and mobile apps,<br> elegant and with efficient code.</h3>
+					</div>
+
+				</div>
+			</div>
 			<hr>
-			<div class="title-marcador"></div>
-			<p class="titulos">Latest posts</p>					
-			<div class="row posts-div">
-  				<div class="col-lg-4 py-2">
-					<div class="card posts">
-						<div class="card-body">
-							<h5 class="card-title">Gramática da estrutura condicional IF com ANTLR</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Sep 30, 2021</h6>
-							<article>
-								<p class="card-text">O Another Tool for Language Recognition, mais conhecido como ANTLR, é uma ferramenta utilizada para gerar compiladores. A gramática serve para validar as expressões regulares criadas para uma linguagem de programação.</p>		
-							</article>										
-							<a class="read-link" href="https://medium.com/thomas-aguiar/gram%C3%A1tica-da-estrutura-condicional-if-com-antlr-ab26afd7d68a" class="card-link" target="_blank">Read on</a>
+			<!-- Últimas postagens -->
+			<div class="container posts">
+				<div class="head">
+					<div class="marcador"></div>
+					<h2>Latest posts</h2>
+				</div>
+
+				<div class="row body">
+					<div class="col-lg-4 py-2">
+						<div class="card post">
+							<div class="card-body">
+								<h5 class="card-title">Gramática da estrutura condicional IF com ANTLR</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Sep 30, 2021</h6>
+								<article>
+									<p class="card-text">O Another Tool for Language Recognition, mais conhecido como
+										ANTLR,
+										é
+										uma ferramenta utilizada para gerar compiladores. A gramática serve para validar
+										as
+										expressões regulares criadas para uma linguagem de programação.</p>
+								</article>
+								<a class="link"
+									href="https://medium.com/thomas-aguiar/gram%C3%A1tica-da-estrutura-condicional-if-com-antlr-ab26afd7d68a"
+									target="_blank">Read on</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 py-2">
-					<div class="card posts">
-						<div class="card-body">
-							<h5 class="card-title">Avaliação de Desempenho por Competências</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Mar 31, 2021</h6>
-							<article>
-								<p class="card-text">Avaliação de Desempenho por Competências é uma análise sistemática do desempenho de cada colaborador de uma empresa.
-								Ela mensura a contribuição de cada pessoa a partir da relação entre o desempenho...</p>
-							</article>							
-							<a class="read-link" href="https://medium.com/thomas-aguiar/avalia%C3%A7%C3%A3o-de-desempenho-por-compet%C3%AAncias-548faad4b379" class="card-link" target="_blank">Read on</a>
+					<div class="col-lg-4 py-2">
+						<div class="card post">
+							<div class="card-body">
+								<h5 class="card-title">Avaliação de Desempenho por Competências</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Mar 31, 2021</h6>
+								<article>
+									<p class="card-text">Avaliação de Desempenho por Competências é uma análise
+										sistemática
+										do
+										desempenho de cada colaborador de uma empresa.
+										Ela mensura a contribuição de cada pessoa a partir da relação entre o
+										desempenho...
+									</p>
+								</article>
+								<a class="link"
+									href="https://medium.com/thomas-aguiar/avalia%C3%A7%C3%A3o-de-desempenho-por-compet%C3%AAncias-548faad4b379"
+									target="_blank">Read on</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 py-2">
-					<div class="card posts">
-						<div class="card-body">
-							<h5 class="card-title">Bootstrap</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Jul 14, 2020</h6>
-							<article>
-								<p class="card-text">É um dos Framework front-end mais populares atualmente. Criado pela equipe do Twitter ele é um software livre, ou seja, tem seu código fonte aberto para a comunidade. Uma das principais características dele é ser responsivo. - “Ah, mas Thom, eu não faço...</p>
-							</article>						
-							<a class="read-link" href="https://medium.com/thomas-aguiar/bootstrap-3a56ce9b281a" class="card-link" target="_blank">Read on</a>						
+					<div class="col-lg-4 py-2">
+						<div class="card post">
+							<div class="card-body">
+								<h5 class="card-title">Bootstrap</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Jul 14, 2020</h6>
+								<article>
+									<p class="card-text">É um dos Framework front-end mais populares atualmente. Criado
+										pela
+										equipe do Twitter ele é um software livre, ou seja, tem seu código fonte aberto
+										para
+										a
+										comunidade. Uma das principais características dele é ser responsivo. - “Ah, mas
+										Thom,
+										eu não faço...</p>
+								</article>
+								<a class="link" href="https://medium.com/thomas-aguiar/bootstrap-3a56ce9b281a"
+									target="_blank">Read on</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<script>    		
-    		//Copiar id do discord para área de transferência
-        	$("#btdiscord").on('click', function() {
-  				const texto = "thmsaguiar#8761";
-           		let inputTest = document.createElement("input");
-           		inputTest.value = texto;
-           		document.body.appendChild(inputTest);
-           		inputTest.select();
-           		document.execCommand('copy');           		
-           		document.body.removeChild(inputTest);          
-           		Swal.fire({
-           			icon:'success',
-           			title: 'ID copiado!',
-				  	text: 'Pronto, agora é só me enviar uma solicitação! ☺', 				  	
-				  	confirmButtonText: 'Okay',
-				  	confirmButtonColor: '#7DCEA0', 
-				});
-			});			
-    	</script>
-	</body>
-	<footer>
-		<hr>
-		<div class="shake-slow shake-constant--hover">
-			<a type="button" class="btn btn-outline-warning btn-buymeacoffe" href="https://www.buymeacoffee.com/thmsaguiar" target="_blank"><img src="imagens/bmc-icon.png"></a>
-		</div>		
-		<div class="rodape">
-			<a href="index.html">© 2021 Thomas Aguiar Vicente</a>			
-			<a href="about.html">About</a>
-			<a href="portfolio.html">Portfolio</a>			
-		</div>	
-	</footer>
+		</section>
+	</main>
+	<script src="src/js/script.js"></script>
+</body>
+<footer class="rodape">
+	<a class="link" href="index.html">© 2021 Thomas Aguiar Vicente</a>
+	<a class="link" href="about.html">About</a>
+	<a class="link" href="portfolio.html">Portfolio</a>
+</footer>
+
 </html>
