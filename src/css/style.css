@@ -244,6 +244,13 @@ ul{
 }
 
 
+.btn-git{
+	background-color: white;
+	width: 30px;	
+}
+.link-repo:hover .btn-git{
+	background-color: #A9A9A9;
+}
 
 
 
@@ -300,6 +307,13 @@ ul{
 }
 .backg{
 	display: none;
+}
+.featurette-img{
+	width: 250px;
+}
+.link-port button{
+	height: 40px; 
+	background-color: black;
 }
 
 @media (max-width: 760px){
